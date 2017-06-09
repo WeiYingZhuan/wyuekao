@@ -1,0 +1,201 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "黑体";
+}
+a{
+     text-decoration: none;
+}
+html,body,.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    position: relative;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background: #23AB37;
+    justify-content: space-between;
+    padding: 1rem;
+    .div1{
+        width: 6rem;
+        height: 2.5rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+.nav{
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 8%;
+    z-index: 10;
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        li{
+            width: 30%;
+            height: 3rem;
+            line-height: 3rem;
+            border: solid 1px white;
+            text-align: center;
+            a{
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
+.out{
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+    overflow: auto;
+    .carousel{
+        width: 100%;
+        .carousel-inner{
+            width: 100%; 
+            .item{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .headTop{
+        width: 100%;
+        padding: 1rem;
+        border-bottom: solid 10px lightgray;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            li{
+                width:25%;
+                text-align: center;
+                border-right: solid 1px lightgray;
+                margin-left: 0.3rem;
+                &.li1{
+                    border: none;
+                }
+                a{
+                    display: block;
+                   
+                    img{
+                        width: 50%;
+                    }
+                    img:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        padding: 0.5rem;
+        .content1{
+            width: 100%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+                 padding-top: 0.5rem;
+                li{
+                    width: 25%;
+                    text-align: center;
+                    a{
+                        display: block;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                    span{
+                        margin-top: 0.4rem;
+                    }
+                    .span1{
+                        color: darkgray;
+                    }
+                    .span2{
+                        display: inline-block;
+                        width: 4rem;
+                        height: 2rem;
+                        background:#DDF2E1;
+                        border-radius:10px ;
+                        color:green;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+       .search{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 1rem;
+        input{
+            border: none;
+            border: solid 1px green;
+            height: 4rem;
+            width: 65%;
+            padding-left: 1rem;
+        }
+        button{
+            background: #23AB37;
+            border: solid 1px #23AB37;
+            width: 25%;
+            height: 4rem;
+            border: none;
+            color: white;
+            
+        }
+        a{
+            position: absolute;
+            top: 30%;
+            left: 60%;
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+    footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    .p1{
+        margin-bottom: 2.5rem;
+    }
+}
+}
+@media only screen and (min-width:488px ) {
+                .content1{
+                      ul{
+                          li{
+                              flex: 1;
+                          }
+                      }
+                }
+            }
